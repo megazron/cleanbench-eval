@@ -4,7 +4,6 @@
 
 *RViz simulation (Kinova Gen3). Kinova Gen3 pick trials for a Wilson-interval scorecard*
 
-
 **The evaluation plumbing a shared robotics benchmark needs: every task content-hashed and split-labelled, every policy declaring its embodiments and what it trained on, and a score that is *refused* rather than quietly reported when the holdout is contaminated.**
 
 This is not a benchmark. It is the harness a benchmark runs on, plus a tiny worked task suite so the whole thing runs today with no simulator and no hardware. NumPy and PyYAML only.
@@ -107,10 +106,6 @@ results = evaluate(MyPolicy(), load_suite("my_suite"), MyEnv(), trials=50, seed=
 ## Scorecard axes
 
 Success rate with a Wilson interval; per-embodiment and per-split breakdowns; sample efficiency (trials to first success); robustness under **declared** perturbations (`camera_jitter`, `lighting_shift`, `dropped_frames`, `scene_distractor`); and a contamination-clean boolean gate. Text, JSON and a self-contained HTML card.
-
-## Origin
-
-This grew out of the evaluation discipline forced by an MSc project on a wearable dual-arm Kinova Gen3 supernumerary-limb robot at Imperial College London, where every "result" had to survive a control that could fail on a broken input and a hold-out the model had never seen, and where a metric that could not be made worse was not trusted when it was good. See [the project](https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation).
 
 ## Limitations
 

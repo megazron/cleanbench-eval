@@ -2,7 +2,7 @@
 
 ![demo](docs/img/demo.gif)
 
-*RViz simulation (Kinova Gen3). Kinova Gen3 pick trials for a Wilson-interval scorecard*
+*Four test scenarios in RViz (Kinova Gen3).*
 
 **The evaluation plumbing a shared robotics benchmark needs: every task content-hashed and split-labelled, every policy declaring its embodiments and what it trained on, and a score that is *refused* rather than quietly reported when the holdout is contaminated.**
 

@@ -1,0 +1,10 @@
+id: lift_cube_test
+description: Held-out variant of the cube lift, same body, new scene seed.
+embodiment: {tag: toy_2dof_grip, dof: 2, gripper: parallel, base: fixed}
+success: "object_z > 0.05 and gripper_closed"
+observation: {camera: scene, width: 640, height: 480, intrinsics: [615.0, 615.0, 320.0, 240.0], rate_hz: 30.0}
+max_steps: 40
+tolerance: 0.005
+split: test
+tags: [pick, single_arm]
+seed_assets: {scene: "sha256:aa11"}

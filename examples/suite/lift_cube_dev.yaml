@@ -1,0 +1,9 @@
+id: lift_cube_dev
+description: Grip a 40 mm cube on the table and lift it clear of the surface.
+embodiment: {tag: toy_2dof_grip, dof: 2, gripper: parallel, base: fixed}
+success: "object_z > 0.05 and gripper_closed"
+observation: {camera: scene, width: 640, height: 480, intrinsics: [615.0, 615.0, 320.0, 240.0], rate_hz: 30.0}
+max_steps: 40
+tolerance: 0.005
+split: dev
+tags: [pick, single_arm]

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+<rect width="1000" height="340" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#6b7580"/></marker></defs>
+<text x="30" y="40" font-size="22" font-weight="700" fill="#1f2933">What robobench puts between a policy and a number</text>
+<rect x="30" y="90" width="165" height="150" rx="10" fill="#e3f2f4" stroke="#0b7285" stroke-width="2"/>
+<text x="112.5" y="118" font-size="15" font-weight="700" fill="#1f2933" text-anchor="middle">task suite</text>
+<text x="112.5" y="144" font-size="11.5" fill="#6b7580" text-anchor="middle">YAML tasks, each</text>
+<text x="112.5" y="161" font-size="11.5" fill="#6b7580" text-anchor="middle">content-hashed and</text>
+<text x="112.5" y="178" font-size="11.5" fill="#6b7580" text-anchor="middle">split-labelled</text>
+<line x1="195" y1="165.0" x2="222" y2="165.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="222" y="90" width="165" height="150" rx="10" fill="#e3f2f4" stroke="#0b7285" stroke-width="2"/>
+<text x="304.5" y="118" font-size="15" font-weight="700" fill="#1f2933" text-anchor="middle">manifest</text>
+<text x="304.5" y="144" font-size="11.5" fill="#6b7580" text-anchor="middle">sha256 per task,</text>
+<text x="304.5" y="161" font-size="11.5" fill="#6b7580" text-anchor="middle">one suite hash,</text>
+<text x="304.5" y="178" font-size="11.5" fill="#6b7580" text-anchor="middle">signed + shipped</text>
+<line x1="387" y1="165.0" x2="414" y2="165.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="414" y="90" width="165" height="150" rx="10" fill="#fbe9eb" stroke="#b02a37" stroke-width="2"/>
+<text x="496.5" y="118" font-size="15" font-weight="700" fill="#b02a37" text-anchor="middle">contamination</text>
+<text x="496.5" y="138" font-size="15" font-weight="700" fill="#b02a37" text-anchor="middle">gate</text>
+<text x="496.5" y="164" font-size="11.5" fill="#6b7580" text-anchor="middle">refuses a 'clean'</text>
+<text x="496.5" y="181" font-size="11.5" fill="#6b7580" text-anchor="middle">score if holdout is</text>
+<text x="496.5" y="198" font-size="11.5" fill="#6b7580" text-anchor="middle">in the training set</text>
+<line x1="579" y1="165.0" x2="606" y2="165.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="606" y="90" width="165" height="150" rx="10" fill="#e3f2f4" stroke="#0b7285" stroke-width="2"/>
+<text x="688.5" y="118" font-size="15" font-weight="700" fill="#1f2933" text-anchor="middle">runner</text>
+<text x="688.5" y="144" font-size="11.5" fill="#6b7580" text-anchor="middle">your env + policy,</text>
+<text x="688.5" y="161" font-size="11.5" fill="#6b7580" text-anchor="middle">embodiment checked,</text>
+<text x="688.5" y="178" font-size="11.5" fill="#6b7580" text-anchor="middle">perturbations declared</text>
+<line x1="771" y1="165.0" x2="798" y2="165.0" stroke="#6b7580" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="798" y="90" width="165" height="150" rx="10" fill="#e3f2f4" stroke="#2b8a3e" stroke-width="2"/>
+<text x="880.5" y="118" font-size="15" font-weight="700" fill="#2b8a3e" text-anchor="middle">scorecard</text>
+<text x="880.5" y="144" font-size="11.5" fill="#6b7580" text-anchor="middle">Wilson CI, per split,</text>
+<text x="880.5" y="161" font-size="11.5" fill="#6b7580" text-anchor="middle">per embodiment,</text>
+<text x="880.5" y="178" font-size="11.5" fill="#6b7580" text-anchor="middle">clean/not-clean</text>
+<text x="30" y="322" font-size="12.5" fill="#6b7580" font-style="italic">The gate is the point: a score is withheld, not footnoted, when the holdout was trained on.</text>
+</svg>

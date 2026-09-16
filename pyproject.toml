@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robobench-harness"
+version = "0.1.0"
+description = "Reproducible, embodiment-tagged, contamination-controlled evaluation harness for robot policies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Gaus Mohiuddin Sayyad", email = "maintainer@example.com"}]
+keywords = ["robotics", "benchmark", "evaluation", "vla", "contamination", "reproducibility"]
+dependencies = ["numpy>=1.21", "pyyaml>=5.4"]
+
+[project.urls]
+Homepage = "https://github.com/megazron/robobench-harness"
+
+[project.scripts]
+robobench = "robobench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

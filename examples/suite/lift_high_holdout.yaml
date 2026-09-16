@@ -1,0 +1,9 @@
+id: lift_high_holdout
+description: Lift the cube higher, on the holdout split, to probe generalization of height.
+embodiment: {tag: toy_2dof_grip, dof: 2, gripper: parallel, base: fixed}
+success: "object_z > 0.12 and gripper_closed"
+observation: {camera: scene, width: 640, height: 480, intrinsics: [615.0, 615.0, 320.0, 240.0], rate_hz: 30.0}
+max_steps: 80
+tolerance: 0.005
+split: holdout
+tags: [pick, height]

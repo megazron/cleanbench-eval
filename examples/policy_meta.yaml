@@ -1,0 +1,8 @@
+# A policy's honest declaration. This one is DELIBERATELY contaminated: it admits
+# it tuned on the test task, so `check-contamination` must refuse to call its
+# test/holdout score clean.
+name: demo_policy
+embodiments: [toy_2dof_grip]
+trained_on:
+  - lift_cube_dev            # fine: dev is for tuning
+  - lift_cube_test           # NOT fine: this is a test task

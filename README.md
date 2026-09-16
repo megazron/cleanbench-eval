@@ -1,11 +1,11 @@
-# robobench-harness
+# CleanBench
 
 **The evaluation plumbing a shared robotics benchmark needs: every task content-hashed and split-labelled, every policy declaring its embodiments and what it trained on, and a score that is *refused* rather than quietly reported when the holdout is contaminated.**
 
 This is not a benchmark. It is the harness a benchmark runs on, plus a tiny worked task suite so the whole thing runs today with no simulator and no hardware. NumPy and PyYAML only.
 
 ```
-pip install git+https://github.com/megazron/robobench-harness
+pip install git+https://github.com/megazron/cleanbench-eval
 robobench validate examples/suite
 robobench run scripted examples/suite --trials 20
 ```
@@ -33,9 +33,9 @@ robobench does not fix the field. It fixes the plumbing, so that when a shared s
 ## Install
 
 ```
-pip install git+https://github.com/megazron/robobench-harness
+pip install git+https://github.com/megazron/cleanbench-eval
 # development
-git clone https://github.com/megazron/robobench-harness && cd robobench-harness
+git clone https://github.com/megazron/cleanbench-eval && cd cleanbench-eval
 pip install -e . && python -m pytest -q
 ```
 

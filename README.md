@@ -1,5 +1,10 @@
 # CleanBench
 
+![demo](docs/img/demo.gif)
+
+*RViz simulation (Kinova Gen3). Kinova Gen3 pick trials for a Wilson-interval scorecard*
+
+
 **The evaluation plumbing a shared robotics benchmark needs: every task content-hashed and split-labelled, every policy declaring its embodiments and what it trained on, and a score that is *refused* rather than quietly reported when the holdout is contaminated.**
 
 This is not a benchmark. It is the harness a benchmark runs on, plus a tiny worked task suite so the whole thing runs today with no simulator and no hardware. NumPy and PyYAML only.
